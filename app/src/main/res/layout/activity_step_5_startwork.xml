@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.an droid.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <include layout="@layout/logo_register" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_welcome_s1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="@string/con_people"
+                    android:textColor="@color/black"
+                    android:textSize="12pt"
+                    android:textStyle="normal" />
+
+                <EditText
+
+                    style="@style/DefaultWlbEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_search_black_24dp"
+                    android:gravity="center"
+                    android:hint="Search your connection"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textStyle="normal" />
+
+                <include
+                    android:layout_marginTop="20dp"
+                    layout="@layout/list_item_con_friend"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/bottom_btn_next" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:text="SKIP"
+                android:textColor="@color/primaryTextColor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

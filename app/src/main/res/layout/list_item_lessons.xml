@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/toggleView_lessons"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imv_btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_play_circle_filled_gray_24dp" />
+
+        <TextView
+            android:id="@+id/tv_lesson_judul"
+            style="@style/TextStyle.Heading.Posting"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_lesson_duration"
+            style="@style/TextStyle.Title.Sub"
+            android:gravity="right"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:text="11:00:11" />
+
+    </LinearLayout>
+</LinearLayout>

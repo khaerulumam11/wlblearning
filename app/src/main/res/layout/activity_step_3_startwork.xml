@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <include layout="@layout/logo_register" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_welcome_s1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:text="@string/step2getstarted"
+                    android:textColor="@color/black"
+                    android:textSize="12pt"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/r_s2_info"
+                    android:textColor="@color/secondaryLightColor"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_size_default"
+                    android:background="@drawable/et_login_style"
+                    android:hint="@string/tlead"
+                    android:padding="@dimen/et_padding_default" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_size_default"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/et_login_style"
+                    android:hint="Ufor"
+                    android:padding="@dimen/et_padding_default" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_size_default"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/spinner_login_language"
+                    android:padding="@dimen/et_padding_default" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/bottom_next_register">
+
+            <include layout="@layout/bottom_btn_next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

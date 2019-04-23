@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.learning.allList.AllTrendingList">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.wlb.framework.learning.ui.learning.allList.viewModel.ReviewViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.wlb.framework.learning.ui.custom.RoundedImageView
+                android:id="@+id/avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sample_profile" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/content_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="@style/RatingBar"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/reviewer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="David James"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="@dimen/ts_medium" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 February 2019"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/ts_small" />
+
+                <TextView
+                    android:id="@+id/reviewText"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This course is an awesome way to introduce UI/UX to the modern non-tech user. Adobe is an awesome platform and Daniel is a fun light-hearted dude! Thanks for the help! Looking forward to an exciting career in the development and design world! Would definitely recommend!"
+                    android:textSize="@dimen/ts_medium" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="#F1EFEF">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/nama_instructor"
+                            android:textSize="@dimen/ts_small"
+                            android:text="Daniel Schwarz(Instructor)" />
+
+                        <TextView
+                            android:id="@+id/tgl_review_instructor"
+                            android:layout_width="wrap_content"
+                            android:textSize="@dimen/ts_xsmall"
+                            android:layout_height="wrap_content"
+                            android:text=" 10 February 2019" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/ts_medium"
+                        android:text="Thanks David, appreciate the positive feedback and all the best in your design career. Happy Days. DS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/ts_small"
+                        android:text="Was this review helpful ? " />
+
+                    <ImageView
+                        android:id="@+id/like"
+                        android:src="@drawable/like"
+                        android:layout_width="wrap_content"
+                        android:paddingStart="@dimen/padding_small"
+                        android:paddingEnd="@dimen/padding_small"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/warn"
+                        android:src="@drawable/warning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

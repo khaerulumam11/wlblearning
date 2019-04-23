@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.wlb.framework.learning.ui.feed.blogs.CourseViewModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/learning_home_course_w"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sample_adobe_pink" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:layout_marginRight="@dimen/padding_normal"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_normal"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:gravity="top"
+                        android:text="Course Title"
+                        android:textSize="@dimen/ts_small" />
+
+                    <TextView
+                        android:id="@+id/tutor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_xsmall"
+                        android:layout_marginBottom="@dimen/padding_xsmall"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Tutor Name"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/ts_xsmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.wlb.framework.learning.ui.custom.RatingView
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/course_rating_view_h"
+                            android:layout_marginTop="@dimen/padding_mini"
+                            android:layout_marginBottom="@dimen/padding_mini" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text=" 4.0 (1028)"
+                            android:textSize="@dimen/ts_xxsmall" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/priceDiscont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="Rp -"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/ts_xsmall"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/realPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="Rp -"
+                        android:textColor="@color/blue_sky"
+                        android:textSize="@dimen/ts_small"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

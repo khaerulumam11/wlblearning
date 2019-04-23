@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "680736907248",
+    "firebase_url": "https://wlb-dev.firebaseio.com",
+    "project_id": "wlb-dev",
+    "storage_bucket": "wlb-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680736907248:android:19a2733866f048d2",
+        "android_client_info": {
+          "package_name": "com.wlb.framework.learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680736907248-q9oanofbrtgaqaa678ke0ui9tpmjj017.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wlb.framework.learning",
+            "certificate_hash": "9af78e81a5024e046c26d3fecf6c61d6add21b1e"
+          }
+        },
+        {
+          "client_id": "680736907248-ffi7fab8udgahsfeqk3sfro083tp04ar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD871Pf3GYRqJxQoY6GFLEbguXamfCnhcA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680736907248-ffi7fab8udgahsfeqk3sfro083tp04ar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

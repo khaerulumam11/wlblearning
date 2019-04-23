@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.wlb.framework.learning.ui.main.bottommenu.viewmodel.EditProfileViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="5dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/Toolbar"
+                app:subtitleTextColor="@color/white"
+                app:title="@string/edit_contact_info"
+                app:titleTextAppearance="@style/Toolbar.TitleText"
+                app:titleTextColor="@color/primaryTextColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.wlb.framework.learning.ui.custom.RoundedImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sample_profile" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Aulia Muslim" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_name"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hidayatullah" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/headline"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cur_pos"
+                    android:textColor="@color/gray" />
+
+                <Spinner
+                    android:id="@+id/spin_curpos"
+                    style="@style/SpinnerDefault.Theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/previous_job"
+                    android:textColor="@color/gray" />
+
+                <Spinner
+                    style="@style/SpinnerDefault.Theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextStyle.Title.Sub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:text="Show Previous Posisition"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Education"
+                    android:textColor="@color/gray" />
+
+                <Spinner
+                    style="@style/SpinnerDefault.Theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextStyle.Title.Sub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:text="Show Education"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country"
+                    android:textColor="@color/gray" />
+
+                <Spinner
+                    style="@style/SpinnerDefault.Theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zipcode"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/gray" />
+
+                <Spinner
+                    style="@style/SpinnerDefault.Theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        style="@style/TextStyle.EditText.Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine" />
+
+                    <Spinner
+                        style="@style/SpinnerDefault.Theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="2"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/gray" />
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/an_contact"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        style="@style/SpinnerDefault.Theme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown" />
+
+                    <EditText
+                        style="@style/TextStyle.EditText.Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Birthday"
+                    android:textColor="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        style="@style/SpinnerDefault.Theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown" />
+
+                    <Spinner
+                        style="@style/SpinnerDefault.Theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,86 @@
+<!--
+  ~  Copyright (C) 2017 MINDORKS NEXTGEN PRIVATE LIMITED
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      https://mindorks.com/license/apache-v2
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">0dp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_huge">55dp</dimen>
+    <dimen name="padding_jumbo">35dp</dimen>
+    <dimen name="padding_xxlarge">30dp</dimen>
+    <dimen name="padding_xlarge">24dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_m">14dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_xsmall">6dp</dimen>
+    <dimen name="padding_xxsmall">4dp</dimen>
+    <dimen name="padding_mini">2dp</dimen>
+    <dimen name="padding_tiny">1dp</dimen>
+    <dimen name="content_margin">16dp</dimen>
+    <dimen name="content_margin_double">32dp</dimen>
+
+    <!--text size-->
+    <dimen name="ts_xsmall">11sp</dimen>
+    <dimen name="ts_xxsmall">9sp</dimen>
+    <dimen name="ts_xxxxsmall">5sp</dimen>
+    <dimen name="ts_small">13sp</dimen>
+    <dimen name="ts_default">14sp</dimen>
+    <dimen name="ts_medium">15sp</dimen>
+    <dimen name="ts_large">17sp</dimen>
+    <dimen name="ts_xlarge">19sp</dimen>
+    <dimen name="ts_xxlarge">21sp</dimen>
+    <dimen name="ts_xxxlarge">23sp</dimen>
+    <dimen name="ts_xxxxlarge">25sp</dimen>
+    <dimen name="ts_jumbo">30sp</dimen>
+    <dimen name="ts_signin_hi">45sp</dimen>
+
+    <dimen name="learning_rating_ts">35sp</dimen>
+    <dimen name="learning_tab_h">50dp</dimen>
+
+    <dimen name="common_margin">10dp</dimen>
+    <dimen name="et_size_default">60dp</dimen>
+    <dimen name="et_padding_default">5dp</dimen>
+    <dimen name="default_height_button">60dp</dimen>
+    <dimen name="default_height_edit_text">50dp</dimen>
+    <dimen name="bottom_next_register">20dp</dimen>
+
+    <dimen name="learning_video_h">300dp</dimen>
+    <!--<dimen name="learning_title_m_t">290dp</dimen>-->
+    <dimen name="learning_title_h">80dp</dimen>
+    <dimen name="learning_detail_h">380dp</dimen>
+    <dimen name="learning_collapse_margin">5dp</dimen>
+    <dimen name="learning_main_content_h">500dp</dimen>
+    <dimen name="learning_button_w">150dp</dimen>
+    <dimen name="learning_button_h">50dp</dimen>
+    <dimen name="learning_button_left_p">20dp</dimen>
+    <dimen name="learning_elevation">4dp</dimen>
+
+    <dimen name="learning_rating_percent_w">30dp</dimen>
+    <dimen name="learning_rating_star_w">12dp</dimen>
+    <dimen name="learning_instruction_icon_w">15dp</dimen>
+    <dimen name="learning_instruction_img_w">100dp</dimen>
+    <dimen name="learning_instruction_icon_p_t">6dp</dimen>
+    <dimen name="learning_home_course_w">150dp</dimen>
+
+    <dimen name="rating_view_m">@dimen/padding_xxsmall</dimen>
+    <dimen name="course_rating_view_h">12dp</dimen>
+
+</resources>

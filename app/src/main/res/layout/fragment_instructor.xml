@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.learning.detail.timeline.fragment.InstructorFragment">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.wlb.framework.learning.ui.learning.detail.timeline.viewmodel.InstructorViewModel" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/content_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About the instructors"
+                            android:textSize="@dimen/ts_large" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#D3D2D2"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/content_margin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <com.wlb.framework.learning.ui.custom.RoundedImageView
+                                android:layout_width="@dimen/learning_instruction_img_w"
+                                android:layout_height="@dimen/learning_instruction_img_w"
+                                android:src="@drawable/sample_profile" />
+
+                            <!--<LinearLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginStart="@dimen/content_margin"-->
+                                <!--android:orientation="vertical"-->
+                                <!--android:layout_marginLeft="@dimen/content_margin">-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="center_vertical"-->
+                                    <!--android:orientation="horizontal">-->
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="@dimen/learning_instruction_icon_w"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:src="@drawable/star"-->
+                                        <!--android:adjustViewBounds="true"-->
+                                        <!--android:layout_marginRight="@dimen/content_margin"-->
+                                        <!--android:layout_marginEnd="@dimen/content_margin" />-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/txt_instructor"-->
+                                        <!--android:layout_weight="1"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="4.7 Instructor Rating"                            -->
+                                        <!--android:textSize="@dimen/ts_medium"-->
+                                        <!--/>-->
+
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_marginTop="@dimen/learning_instruction_icon_p_t"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:gravity="center_vertical"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="horizontal">-->
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="@dimen/learning_instruction_icon_w"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:src="@drawable/chat"-->
+                                        <!--android:scaleType="fitCenter"-->
+                                        <!--android:adjustViewBounds="true"-->
+                                        <!--android:layout_marginRight="@dimen/content_margin"-->
+                                        <!--android:layout_marginEnd="@dimen/content_margin"/>-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/txt_review"-->
+                                        <!--android:layout_weight="2"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="21,251 Reviews"-->
+                                        <!--android:textSize="@dimen/ts_medium"/>-->
+
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_marginTop="@dimen/learning_instruction_icon_p_t"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="center_vertical"-->
+                                    <!--android:orientation="horizontal">-->
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="@dimen/learning_instruction_icon_w"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:adjustViewBounds="true"-->
+                                        <!--android:src="@drawable/user"-->
+                                        <!--android:layout_marginRight="@dimen/content_margin"-->
+                                        <!--android:layout_marginEnd="@dimen/content_margin"/>-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/txt_student"-->
+                                        <!--android:layout_weight="3"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="105,043 Students"-->
+                                        <!--android:textSize="@dimen/ts_medium"/>-->
+
+                                <!--</LinearLayout>-->
+                                <!--<LinearLayout-->
+                                    <!--android:layout_marginTop="@dimen/learning_instruction_icon_p_t"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:gravity="center_vertical"-->
+                                    <!--android:orientation="horizontal">-->
+                                    <!--<ImageView-->
+                                        <!--android:layout_width="@dimen/learning_instruction_icon_w"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--app:srcCompat="@drawable/ic_nav_learning_blue"-->
+                                        <!--android:adjustViewBounds="true"-->
+                                        <!--android:layout_marginRight="@dimen/content_margin"-->
+                                        <!--android:layout_marginEnd="@dimen/content_margin"/>-->
+
+                                    <!--<TextView-->
+                                        <!--android:id="@+id/txt_courses"-->
+                                        <!--android:layout_weight="5"-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="22 Courses"-->
+                                        <!--android:textSize="@dimen/ts_medium"/>-->
+
+                                <!--</LinearLayout>-->
+                            <!--</LinearLayout>-->
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/name_instructor"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daniel Schwarz"
+                            android:includeFontPadding="false"
+                            android:textSize="@dimen/ts_large"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:id="@+id/jobs"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#014a62"
+                            android:text="Adobe Certified Instructor and Adobe Certified Expert"
+                            android:textSize="@dimen/ts_medium"/>
+                        <TextView
+                            android:id="@+id/desk_instructor"
+                            android:layout_marginTop="@dimen/padding_small"
+                            android:layout_marginBottom="@dimen/padding_small"
+                            android:textSize="@dimen/ts_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      Sharing is who I am, and teaching is where I am at my best, because I've been on both sides of that equation, and getting to deliver useful training is my meaningful way to be a part of the creative community.I've spent a long time watching others learn, and teach, to refine how I work with you to be efficient, useful and, most importantly, memorable. I want you to carry what I've shown you into a bright future.I have a wife (a lovely Irish girl) and kids. I have lived and worked in many places (as Kiwis tend to do) – but most of my 14+ years of creating and teaching has had one overriding theme: bringing others along for the ride as we all try to change the world with our stories, our labours of love and our art.
+     I'm a certified Adobe instructor (ACI) in Ireland. I'm also an Adobe Certified Expert (ACE) and have completed the Adobe Certified Associate training (ACA). And I don't just do Adobe. Remember, media is a very broad term – digital blew out the borders, so we are all constantly learning.
+
+I've been teaching for 14+ years. I come from being a media designer and content creator – so I understand exactly where you're at now. I've been there. I love this stuff. Print, digital publishing, web and video. I can see how it all connects. And I can see how we can share those connections.
+
+I built Bring Your Own Laptop in Ireland, New Zealand, Australia and online. I have a great team working with me to keep BYOL at the top of Adobe and digital media training. I understand business, I have one – so I know how important it is to get it right and make it work for you.
+
+Now my focus is on Udemy. It's my mission to bring you the best training for digital media.
+
+Daniel Schwarz"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

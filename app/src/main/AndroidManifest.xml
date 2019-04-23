@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wlb.framework.learning">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".WlbApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.learning.allcourse.AllCategoryActivity"
+            android:parentActivityName=".ui.learning.LearningActivity"
+            android:launchMode="singleTop">
+
+        </activity>
+        <activity
+            android:name=".ui.learning.detail.DetailLearningAcitivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.learning.LearningActivity" />
+        <activity android:name=".ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.learning.LearningActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.learning.allList.AllTrendingList"
+            android:label="List Trending Course"
+            android:parentActivityName=".ui.learning.LearningActivity" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:parentActivityName=".ui.login.LoginActivity" />
+        <activity
+            android:name=".ui.main.bottommenu.detail.EditProfile"
+            android:parentActivityName=".ui.main.MainActivity" />
+        <activity
+            android:name=".ui.feed.FeedActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.main.MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wlb.framework.learning.ui.main.MainActivity" />
+        </activity>
+
+        <service android:name=".utils.firebase.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".utils.firebase.PushNotifikasiService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" -->
+        <!-- android:value="com.jwplayer.opensourcedemo.CastOptionsProvider" /> -->
+        <!-- TODO Set your license key -->
+        <meta-data
+            android:name="JW_LICENSE_KEY"
+            android:value="JzrSNwWBDuUU0yQ0l1B/r/WCAWMWjTUVSmhzqcyVOan2SVhz" />
+    </application>
+
+</manifest>

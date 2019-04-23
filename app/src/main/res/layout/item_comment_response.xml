@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.learning.allList.AllTrendingList">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.wlb.framework.learning.ui.learning.allList.viewModel.CommentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sample_profile" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.wlb.framework.learning.ui.custom.RoundedImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/avatar"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/sample_profile" />
+
+                    <LinearLayout
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="David James"
+                            android:includeFontPadding="false"
+                            android:textStyle="bold"
+                            android:textColor="#000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="10 February 2019"
+                            android:id="@+id/date"
+                            android:textSize="@dimen/ts_small"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/response"
+                            android:text="This new campaign is really awesome"
+                            android:includeFontPadding="false"
+                            android:textSize="@dimen/ts_medium"
+                            android:layout_marginEnd="@dimen/content_margin"
+                            android:layout_marginRight="@dimen/content_margin"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D3D2D2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

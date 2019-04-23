@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SpinnerDefault" parent="@style/Widget.AppCompat.Spinner.DropDown">
+        <item name="colorControlHighlight">#E3F2FD</item>
+        <item name="android:colorAccent">@color/primaryTextColor</item>
+        <item name="android:background">@drawable/spinner_login_language</item>
+        <item name="android:height">@dimen/default_height_button</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+</resources>

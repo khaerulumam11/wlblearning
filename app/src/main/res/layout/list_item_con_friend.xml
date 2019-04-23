@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/circular_bg"
+            android:padding="19dp"
+            app:srcCompat="@drawable/ic_mindorks_logo" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Habib Akbar Aziiz" />
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scrum Master" />
+
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kreasi Inovasi Digital" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/ic_add_friend_blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/gray" />
+</LinearLayout>

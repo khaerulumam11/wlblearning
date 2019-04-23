@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="5dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            app:subtitleTextColor="@color/white"
+            app:title="@string/add_experience"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:titleTextColor="@color/primaryTextColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/smoth_gray"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Share with my network: "
+            android:textColor="@color/gray" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/position"
+                android:textColor="@color/gray" />
+
+            <EditText
+                style="@style/TextStyle.EditText.Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Technical Lead" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company"
+                android:textColor="@color/gray" />
+
+            <EditText
+                style="@style/TextStyle.EditText.Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/app_name_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/gray" />
+
+            <EditText
+                style="@style/TextStyle.EditText.Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bandung" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:textColor="@color/gray" />
+
+            <EditText
+                style="@style/TextStyle.EditText.Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bandung" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/from"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/to"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="February 2019" />
+
+                <EditText
+                    style="@style/TextStyle.EditText.Profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/TextStyle.Title.Sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="Currently working in this role"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:textColor="@color/gray"
+                android:text="Technical Lead WorkLifeBeyond"
+                android:gravity="top"
+                style="@style/TextStyle.EditText.Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
